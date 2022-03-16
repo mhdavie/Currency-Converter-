@@ -13,8 +13,12 @@ function Converter () {
 
     var valorEmReal = valorEmDolarNumerico * 5.12;
 
+    //nessa parte final vamos usar essa nova variavel nomeada elementoValorConvertido e imprimir na tela com o metodo innerHtml
     var elementoValorConvertido = document.getElementById('valorConvertido');
+    
+    //colocamos a var de valor convertido igual ao valor da logica (valor em real)
     var valorConvertido = "R$ " + valorEmReal
+    //aqui usamos o metodo inner.html para dizer que o elemento do valor convertido 'e igual ao valor convertido deve ser colocado na tela
     elementoValorConvertido.innerHTML = valorConvertido;
 
  
