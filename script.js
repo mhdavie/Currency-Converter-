@@ -9,6 +9,8 @@ function Converter () {
     //essa nova variavel vai pegar o valor que foi inserido e passar pra numero decimal
     var valorEmDolarNumerico = parseFloat(valor);
 
+    //essa variavel vai ser paara pegar o valor em dolar e fazer a logica de multiplicacao para a moeda que os nos precisamos
+
     var valorEmReal = valorEmDolarNumerico * 5.12;
 
     var elementoValorConvertido = document.getElementById('valorConvertido');
@@ -35,7 +37,7 @@ function ConverterEuro () {
 
  
 
-    var valorEmEuro = valorEmDolarNumerico *  1.10;
+    var valorEmEuro = valorEmDolarNumerico *  0.91;
 
     var elementoValorConvertido = document.getElementById('valorConvertido');
     var valorConvertido = "€ " + valorEmEuro
@@ -60,7 +62,7 @@ function ConverterBitcoin () {
     var valorEmDolarNumerico = parseFloat(valor);
 
 
-    var valorEmBitcoin = valorEmDolarNumerico *  39.589;
+    var valorEmBitcoin = valorEmDolarNumerico *  0.000025;
 
     var elementoValorConvertido = document.getElementById('valorConvertido');
     var valorConvertido = "BTC " + valorEmBitcoin
